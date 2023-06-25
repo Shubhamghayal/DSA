@@ -1,9 +1,7 @@
-
 def sum(n):
-    sum1=0
-    if n>0:
-        sum1=sum1+n
-        sum(n-1)
-    print(sum1)
+    if n==0:
+        return 0
+    else:
+        return sum(n-1)+n
 
-sum(10)
+print(sum(10))
